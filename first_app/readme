@@ -1,0 +1,13 @@
+This first app allows : 
+1- make a network request 
+2- fetch some JSON data
+3- print the result 
+
+
+# we gonna use a fake api (based on fake data): jsonplaceholder.typicode.com 
+- This api is used just for testing purposes 
+
+
+##STEPS:  
+1- create the package.json to store the dependencies : npm init -y
+2- install axios to fetch the data                   : npm install axios   
