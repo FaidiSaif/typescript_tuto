@@ -1,16 +1,10 @@
 import  { User }    from  './User'
 import  { Company } from './Company'
+import { CustomMap}  from './CustomMap'
 
-
-/** retrive the DOM container for the map */
-let mapDiv =  document.getElementById('map') as Element; // this a  casting ! 
-
-/** Create a map Object */
-new google.maps.Map(mapDiv, {
-  zoom: 1,
-  center: {
-    lng:0,
-    lat:0
-  }
-})
-
+/** Create a CustomMap object */
+const customMap =  new CustomMap('map'); 
+const user = new User() ;
+const company =  new Company(); 
+customMap.addMarker(user); 
+customMap.addMarker(company); 
