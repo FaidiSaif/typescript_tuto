@@ -1,11 +1,9 @@
-# node_modules
 first_app/node_modules/
-desgin-pattern/node_modules/
+node_modules
 design-pattern/dist/
 design-pattern/dist/*
-design-pattern/.cache
-design-pattern/.cache/
-design-pattern/.cache/*
+.cache
+dist
 
 # 
 desgin-pattern/src/Company.js
@@ -26,5 +24,3 @@ desgin-pattern/.cache/8d/5867e52b6e7fe0372a8a7ea2374d5e.json
 desgin-pattern/dist/index.html
 desgin-pattern/src/index.js
 desgin-pattern/dist/index.html
-
-desgin-pattern/.cache/00/29f6f5fc50dd565d9eb39f458a0b5d.json

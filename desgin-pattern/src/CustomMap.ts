@@ -1,10 +1,12 @@
 
 
-interface Mappable {
+export interface Mappable {
   location : {
     lng:number,
     lat:number
-  }; 
+  };
+  
+  getContent(): string; 
 }
 
 export class CustomMap {
@@ -37,12 +39,11 @@ export class CustomMap {
       /* create a a popup window when the marker clicked with the specified content */
       marker.addListener('click' , () => {
         const infoWindow  = new google.maps.InfoWindow({
-          content : "Hi there"
+          content : mappable.getContent(); 
         });
+
       /* open the Window once created */
         infoWindow.open(this.googleMap , marker); 
       }); 
   }
-
-
 } /** Class END */
