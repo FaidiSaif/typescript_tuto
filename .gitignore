@@ -1,6 +1,28 @@
 # node_modules
 first_app/node_modules/
-design-pattern/node_modules/
+desgin-pattern/node_modules/
+design-pattern/dist/
+design-pattern/dist/*
 design-pattern/.cache/
+design-pattern/.cache/*
 
 # 
+desgin-pattern/src/Company.js
+desgin-pattern/dist/index.js.map
+desgin-pattern/dist/index.html
+desgin-pattern/.cache/d2/3e6db8202c24a390210b2e79419254.json
+desgin-pattern/src/index.js
+desgin-pattern/src/User.js
+desgin-pattern/dist/index.js
+desgin-pattern/dist/src.f10117fe.js
+.gitignore
+
+desgin-pattern/dist/src.f10117fe.js.map
+desgin-pattern/.cache/ad/1d3977bff8689f48e6682587a32057.json
+desgin-pattern/.cache/e9/a45c68a19abcf51400c188fa21e83a.json
+desgin-pattern/.cache/f1/dcad8dd2a74fd3a9fb00c2078d23b0.json
+desgin-pattern/.cache/8d/5867e52b6e7fe0372a8a7ea2374d5e.json
+desgin-pattern/dist/index.html
+desgin-pattern/src/index.js
+desgin-pattern/dist/index.html
+
