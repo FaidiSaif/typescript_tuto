@@ -4,7 +4,7 @@ import { CustomMap}  from './CustomMap'
 
 /** Create a CustomMap object */
 const customMap =  new CustomMap('map'); 
-const user = new User() ;
-const company =  new Company(); 
+const user      =  new User() ;
+const company   =  new Company(); 
 customMap.addMarker(user); 
 customMap.addMarker(company); 

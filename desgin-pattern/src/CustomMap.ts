@@ -39,7 +39,7 @@ export class CustomMap {
       /* create a a popup window when the marker clicked with the specified content */
       marker.addListener('click' , () => {
         const infoWindow  = new google.maps.InfoWindow({
-          content : mappable.getContent(); 
+          content : mappable.getContent()
         });
 
       /* open the Window once created */
