@@ -1,30 +1,29 @@
-class Sorter {
-
-  constructor(public collections :number[]) {}
-  sort(): void { 
-    for(let i = 0 ; i< this.collections.length ; i ++) {
-      for(let j = 0 ;  j < this.collections.length-i-1 ; j ++){
-        if(this.collections[j] > this.collections[j+1]){
-          this.swap(this.collections,j,j+1);
-        }
-      }
-      //console.log(`iteration ${i} , this.collections = ${this.collections}`);
-    }
-  }
-
-  swap(array:number[] , index1: number , index2: number): void {
-    let temp      = array[index1];
-    array[index1] = array[index2];
-    array[index2] = temp ;
-    //console.log("swaping : " , array[index1] ,array[index2]);
-  }
-  __repr__(): void {
-    console.log(this.collections);
-  }
-}
+import { NumbersCollection } from  './NumbersCollection' ;
+import { CharactersCollection } from  './CharactersCollection' ;
+import { LinkedList} from  './LinkedList';
 
 
-let sorter  = new Sorter([1,5,3,6,0,7]);
-sorter.sort();
-sorter.__repr__(); 
+
+
+/** Numebrs   */
+let numberCollection      = new NumbersCollection([1,3,2,10,7,6]);
+numberCollection.sort();
+console.log(numberCollection.collection);
+
+/** Characters   */
+let charactersCollection  = new CharactersCollection("Xsaif"); 
+charactersCollection.sort(); 
+console.log(charactersCollection.collection);
+
+/** Linked List */
+let linkeList = new LinkedList();
+linkeList.add(1);
+linkeList.add(0);
+linkeList.add(3);
+linkeList.add(2);
+
+linkeList.sort(); 
+linkeList.print(); 
+
+
 
