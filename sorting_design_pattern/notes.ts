@@ -18,14 +18,14 @@ class TSorter {
 
     // since string is a primitive type we should use the typeof method to typeGurad the variable 
     if (typeof this.collections === "string"){
-      this.collections.substr(1) // slice from the second position 
+      this.collections.substr(1, this.collections.length-2) // slice from the second position 
     }
   }
 }
 
 /** How to type Guard 
  * 1- for primitive type : 
- *  typeof -> number , string, boolean , symbol 
+ *  typeof for ===> number , string, boolean , symbol 
  * 2- every other type : 
  *  instanceof  
  */
@@ -33,9 +33,9 @@ class TSorter {
 /**  How to put a getter in an interface : 
  *  just use a property to reflet a getter 
  *  interface Sortable {
- *  length : number 
- *  swap(in1 : number , in2 : number) : void;
- *  compare(in1 : number , in2 : number) : boolean;
+ *    length : number 
+ *    swap(in1 : number , in2 : number) : void;
+ *    compare(in1 : number , in2 : number) : boolean;
  * }
  * 
  * class Collection implements Sortable {

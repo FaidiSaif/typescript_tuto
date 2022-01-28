@@ -1,13 +1,14 @@
 import { Sorter } from './Sorter';
 
 export class NumbersCollection extends Sorter {
+  
 
-  constructor (public collection : number[]){super();}
+  constructor (public collection : number[]) { super(); }
   
   get length():number {
     return this.collection.length;
   }
-  
+
   /**
    * @param itemIndex1 
    * @param itemIndex2 

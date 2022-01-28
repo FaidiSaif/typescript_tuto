@@ -1,6 +1,6 @@
 /*************************************
  * if we want to use JS libraries within TS we need to indicate the different functions 
- * definitions and annotations to TS, so to do that we make use of "tyep definition files": 
+ * definitions and annotations to TS, so to do that we make use of "type definition files": 
  * which are a sort of intermediate between TS and JS 
  *    -many modules have their Type definition files included 
  *    -others are available in the net (npm install @types/faker)
@@ -10,11 +10,11 @@
  /********************************  Export & default
   * 
   * 1- 
-  *  export : if you use export default User
+  *  export : if you use export default User // default export 
   *  import : don't use curely braces in import: import User from './User' 
   * 
   * 2-
-  *  export : if you use export  User (without default)
+  *  export : if you use export  User (without default) : named export 
   *  import : must use curely braces in import: import  { User } from './User' 
   * 
   * in TS community convention : do not use default keyword
@@ -25,7 +25,7 @@
 /********* note on OR statement for function signature 
  * 
  *    function (Type1 | Type2 ) {
- *    // here we can access to only the common properties of Type1 ad Type2
+ *    // here we can access to only the common properties of Type1 and Type2
  *    }
  */
 
@@ -47,7 +47,7 @@
    *      .
    *      .
    *      .
-   *  ==> Best Approach is to use interfaces
+   *  ==> Best Approach is to use interfaces (dependency inversion by depending only on the interface and not the concrete classes)
    * 
   */
 

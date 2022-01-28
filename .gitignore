@@ -34,3 +34,5 @@ sorting_design_pattern/build
 sorting_design_pattern/package-lock.json
 
 helloWorld.ts
+
+.parcel-cache

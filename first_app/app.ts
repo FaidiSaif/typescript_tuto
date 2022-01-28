@@ -1,3 +1,5 @@
+
+
 import axios from 'axios'
 const url =  'https://jsonplaceholder.typicode.com/todos/1'
 
@@ -21,7 +23,7 @@ interface Todo {
 }
 
 axios.get(url).then(response => {
-  const todo = response.data as Todo;
+  const todo = response.data as Todo; //the as keyword isa atype assertion in TS : which tells the compiler to consider the object as another type than the type the compiler infers the object to be
   LogTodo(todo.id , todo.title , todo.completed); 
 }); 
 
