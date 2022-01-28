@@ -4,14 +4,11 @@
   "description": "application That : 1- generates a user randomly 2- generates a company randomly 3- display there locations in Google Maps",
   "main": "src/index.ts",
   "dependencies": {
-    "@types/faker": "^5.1.7",
-    "@types/googlemaps": "^3.43.3",
-    "core-js": "^3.9.1",
-    "faker": "^5.4.0",
-    "parcel-bundler": "^1.10.0-beta.1",
-    "typescript": "^4.2.2"
+    "faker": "^6.6.6",
+    "lodash": "^4.17.21",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
