@@ -3,7 +3,7 @@
 /*********************************************************
  *  By default in TS the modifier used is public
  * 
- * when overiding a method we can not change it's modifier 
+ * when overriding a method we can not change it's modifier 
  * 
  ********************************************************/
 
@@ -47,7 +47,7 @@ vehicle.honk();
 
  //2- use the following shortcut 
  // adding the modifier in the constructor argument creates a new field 
- // so don't use the modifier wehn refering to a base class argument 
+ // so don't use the modifier when refering to a base class argument 
  class T_ {
    constructor(public color : string) { // defines a field color and sets it 
 
@@ -66,7 +66,7 @@ class Drink {
 }
 
 class Lemon extends Drink {
-  constructor(public sugar : number , type:string)// notice here type is without modifier else a new field willbe created which is wrong ! 
+  constructor(public sugar:number , type:string)// notice here,the type is without modifier else a new field willbe created which is wrong ! 
   {
     super(type);
   }

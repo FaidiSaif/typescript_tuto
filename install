@@ -1,0 +1,5 @@
+#! /bin/bash
+echo "installing typescript compiler... "
+sudo npm install -g typescript ts-node
+echo "check for install: <tsc --help>"
+tsc --help

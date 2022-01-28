@@ -2,7 +2,7 @@
 const add_ :(a: number , b:number) => void  = (a:number , b: number) => {
   return a +b; 
 }
-// mre conscise annotation : 
+// more conscise annotation : 
 
 /** annotations with functions and objects */
 const add  = (a : number ,b: number) : number  => {
@@ -41,7 +41,7 @@ let maybeThrowError = (message: string) : string => {
 
 
 // destruction with TS : let's start by remembering the destruction format 
-// a function sytax with destructuring : 
+// a function syntax with destructuring : 
 let weatherObject  = {
   date: new Date(),
   weather: "hot"

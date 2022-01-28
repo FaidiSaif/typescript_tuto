@@ -14,12 +14,12 @@ const otherCarMaker  =  carMakers.pop() //same
 //carMakers.push(100) // error : Argument of type 'number' is not assignable to parameter of type 'string'
 
 // 3- Help with functions like map, foreach & reduce , helps like functions suggestions based on types
-// for example if it's an array of string , string helpers popup on variables while coding 
+// for example if it's an array of strings , string helpers popup on variables while coding 
 carMakers.map((car: string): string => {
   return car.toLowerCase(); // toLowerCase popup automatically 
 }); 
 
-/** How we can still use arrays with diferent types? : Flexible Types*/
+/** How we can still use arrays with different types? : Flexible Types*/
 // use the or statement on the annotation : myArray : (type1 | type2 | .. | typeN)[] = []
 
 const importantTypes : (Date | string)[] = [ new Date() , "23-01-2021"]; 

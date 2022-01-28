@@ -12,4 +12,5 @@ const carSpecs : [number , number] = [1254 ,158]; // understandable ? NO :(
 const carStates = {
   weight :1254, 
   horsePower : 158
-} // understandable ? Yes :)
+} // understandable ? Yes :) because with keywrods "keys" it gives more information about the
+//variables meaning  

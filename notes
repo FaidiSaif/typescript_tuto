@@ -1,0 +1,5 @@
+
+## to run a typescript file : 
+1-compile it to js file ==> ts app.ts (generates an app.js file)
+2-run the js file with node ==> node app.js
+or both commands can be combined into one command = ts-node app.ts (without generating a compiled file )

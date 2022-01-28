@@ -1,5 +1,5 @@
 /**
- * every single value in type script has a type
+ * every single value in typescript has a type
  * an interface in type is a definition of a new type
  * 
  * Type Annotation :  Code we add to tell typescript what type of value a variable will refer to 
@@ -12,7 +12,8 @@
  *  
  */
 
-// Examples of type annotations for variables  (all of these annotations are not needed since typescript inference can guess it automatically)
+// Examples of type annotations for variables  (all of these annotations are not needed since typescript
+// inference can guess it automatically)
 let apples  : number    =  5 ; 
 let speed   : string    = 'fast'; 
 let hasName : boolean   = true; 
@@ -37,9 +38,9 @@ let logNumber : (i : number) => void = (i: number) => {
 };
 
 
-/**  we rely on type inference whenevr we can (we let typescript figure out the type without using annotations)
+/**  we rely on type inference whenever we can (we let typescript figure out the type without using annotations)
  *   we rely on type annotation : 
- *        1- we declare a variable in one liena nd initilize it later(inference can't do naything here), example: 
+ *        1- we declare a variable in one line and initilize it later(inference can't do naything here), example: 
  *          let apple ; ==> should be let apple : number; 
  *          apple = 5 ; 
  *        2- when we want a varaible to have a type that can not be inferred correctly 
@@ -52,7 +53,7 @@ let logNumber : (i : number) => void = (i: number) => {
  let numberAboveZero : boolean | number = false ;
  for (let i =0 ; i < mynumbers.length; i++) {
    if (mynumbers[i] > 0 ) {
-     numberAboveZero =  mynumbers[i] //if there no type annotation on numberAboveZero , TS detects a type error 
+     numberAboveZero =  mynumbers[i] //if there is no type annotation on numberAboveZero , TS detects a type error 
    }
  }
 

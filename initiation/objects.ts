@@ -12,7 +12,7 @@ const profile = {
 }
 
 
-//destructing a propertyu from object with annotation 
+//destructing a property from object with annotation 
 const { age } : {age: number} = profile ;  
 console.log(age);
 
