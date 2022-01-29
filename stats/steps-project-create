@@ -1,0 +1,14 @@
+1 - npm init -y  // create the package.json file 
+2 - tsc --init   // create the tsconfig.json file
+3 - npm install nodemon concurrently 
+//nodemon : s based applications by automatically restarting the node application when file changes in the directory are detected
+//concurrently : concurretly differnet commands 
+4 - create the build and src folders 
+5- tell typescript the src and the compiled files 'build' directories 
+//rootDir:  './src'
+//outDir : './build'
+ 6- configure the scrippts in package.json as the following : 
+    "start:build" : "tsc -w", // run tsc en mode watch
+    "start:run": "nodemon build/index.js", //re-run the index.js everytime we make a change 
+    "start": "concurrently npm:start:*" // the start command runs concurrently the build and run commands
+ at the biggening an erro will appear since the index.js does not exist yet, restart the server ctrl +c then npm start
