@@ -8,3 +8,9 @@ or both commands can be combined into one command = ts-node app.ts (without gene
 you need to install parcel bundler which parses the index.html , compiles you ts files into js files
 to run the server : use parcel index.html
 to install parcel : npm install -g parcel-bundler : (now you can run typescript in the browser easily)
+
+
+## working with external JS libraries 
+Typescript needs the types for this library :
+1- types are already included with the library : ok 
+2- types are not included then we need to install the type definition file related to that library
