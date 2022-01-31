@@ -14,3 +14,9 @@ to install parcel : npm install -g parcel-bundler : (now you can run typescript 
 Typescript needs the types for this library :
 1- types are already included with the library : ok 
 2- types are not included then we need to install the type definition file related to that library
+
+
+### create react-redux-typescript app 
+1-generate the app : npx create-react-app rrts --template typescript
+.tsx files are ts files using JSX syntax
+npm install redux react-redux axios redux-thunk

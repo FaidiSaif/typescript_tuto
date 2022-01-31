@@ -38,5 +38,5 @@ const printVehicle_ =(vehicle : Vehicle): void => {
 printVehicle_(oldCivic);
 
 /** even if the interface has less arguments than the object , the object still be accepted */
-/** if the object has an argument that does not exist in the interface => error*/
-/** the logic is : check if all the object memebers exists in the interface  */
+/** if the object does not have an argument that exist in the interface => error*/
+/** the logic is : check if all the object members exists in the interface  */
